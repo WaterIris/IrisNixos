@@ -53,7 +53,7 @@ configuration {
 
 window {
     background-color: @xbg;
-    border: 6px;
+    border: 0px;
     border-color: @x0;
     border-radius: 12px;
     padding: 0px;
