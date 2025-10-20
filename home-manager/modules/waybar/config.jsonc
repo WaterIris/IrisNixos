@@ -1,6 +1,6 @@
 {
 "layer": "top",
-"position": "top", 
+"position": "top",
 "fixed-center": true,
 
 "modules-left": [
@@ -43,12 +43,12 @@
     "6": "6",
   },
 },
-      
+
 "hyprland/window": {
   "max-length": 40,
   "seperate-outputs": false,
 },
-    
+
 "clock": {
   "format": " {:%H:%M}",
   "format-alt": "{:%Y-%m-%d}",
@@ -85,8 +85,14 @@
 },
 
 "network": {
-  "format": "󰖩 On",
-  "format-disconnected": "󰖪 Off",
+  "interval": 2,
+  //"format-wifi": " ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
+  "format-wifi": "  On",
+  //"format-ethernet": "󰈀 ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
+  "format-ethernet": "󰈀 On",
+  "format-disconnected": " Disconnected",
+  "tooltip-format": "{ifname} via {gwaddr}",
+  "format-alt": "{ifname}: {ipaddr}/{cidr}",
 },
 
 "pulseaudio": {
