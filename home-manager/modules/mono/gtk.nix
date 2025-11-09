@@ -21,8 +21,8 @@
     };
 
     font = {
-      name = "Mononoki Nerd Font";
-      size = 12;
+      name = "Mononoki Nerd Font Bold";
+      size = 13;
     };
   };
 }

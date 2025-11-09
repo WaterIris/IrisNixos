@@ -1,9 +1,6 @@
 configuration {
-    modes: "combi";
-    /* modes: "combi,drun,window"; */
-    combi-modes: "window,run";
+    modes: "drun";
     font: "Mononoki Nerd Font Propo bold 16";
-    /* dpi: 144; */
     location: 0;
     fixed-num-lines: true;
     show-icons: false;
@@ -14,10 +11,6 @@ configuration {
     matching: "fuzzy";
     sort: true;
     sorting-method: "levenshtein";
-    /* sorting-method: "fzf"; */
-    /* matching-negate-char: "!"; */
-    /* Causes rofi to crash? */
-    /* normalize-match: true; */
     combi-hide-mode-prefix: false;
     display-run: "";
     display-ssh: "";
@@ -156,7 +149,7 @@ sidebar {
 
 button {
   /* font: "sans Medium 11"; */
-  font: "icomoon 13";
+  font: "Mononoki Nerd Font Propo bold 16";
   background-color: @x0;
   text-color: @x8;
   border: 0px;
@@ -178,7 +171,6 @@ inputbar {
     spacing: 0px;
     background-color: @xbg;
     padding: 25px 25px 15px 25px;
-    /* children: [ prompt,textbox-prompt-colon,entry,case-indicator ]; */
     children: [prompt, textbox-prompt-colon, entry];
 }
 

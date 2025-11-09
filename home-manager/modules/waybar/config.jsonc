@@ -1,7 +1,13 @@
 {
 "layer": "top",
 "position": "top",
+"margin-left": 50,
+"margin-right": 50,
+"height" : 34,
+"width" : 1200,
+"margin-top": 5,
 "fixed-center": true,
+"reload_style_on_change": true,
 
 "modules-left": [
   "battery",
@@ -14,9 +20,7 @@
 ],
 
 "modules-right": [
-  "cpu",
   "memory",
-  "disk",
   "clock",
 ],
 
@@ -87,7 +91,7 @@
 "network": {
   "interval": 2,
   //"format-wifi": " ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
-  "format-wifi": "  On",
+  "format-wifi": " On",
   //"format-ethernet": "󰈀 ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
   "format-ethernet": "󰈀 On",
   "format-disconnected": " Disconnected",
@@ -108,9 +112,26 @@
   },
 },
 
-"custom/sep": {
-  "format": "|",
-  "interval": 0,
+"pulseaudio": {
+"format": "{icon} {volume}%",
+"format-bluetooth": "{icon} 󰂰 {volume}",
+"format-icons": {
+    "headphone": "",
+    "hands-free": "",
+    "headset": "",
+    "phone": "",
+    "portable": "",
+    "car": "",
+    "default": [
+      "", "", "󰕾",  ""
+    ],
+    "ignored-sinks": [
+      "Easy Effects Sink"
+    ],
+},
+"scroll-step": 5.0,
+"tooltip-format": "{icon} {desc} | {volume}%",
+"smooth-scrolling-threshold": 1,
 },
 
 }

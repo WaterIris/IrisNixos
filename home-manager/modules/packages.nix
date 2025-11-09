@@ -36,5 +36,6 @@
     wezterm
     kitty
     tmux
+    android-studio
   ];
 }
