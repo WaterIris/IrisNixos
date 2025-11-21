@@ -26,7 +26,7 @@
 /*bar itself*/
 window#waybar {
   color: @fg;
-  background: alpha(@bg, 0.85);
+  background: alpha(@bg, 1);
   /*background: @bg;*/
   border-radius: 5px;
 }
