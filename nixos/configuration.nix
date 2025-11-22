@@ -57,10 +57,13 @@
 
   console.keyMap = "pl2";
 
+  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd.qemuOvmf = true;
+
   users.users.iris = {
     isNormalUser = true;
     description = "iris";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "kvm" "libvirtd" ];
     packages = with pkgs; [];
   };
 

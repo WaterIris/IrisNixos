@@ -27,8 +27,7 @@
 window#waybar {
   color: @fg;
   background: alpha(@bg, 1);
-  /*background: @bg;*/
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
 #workspaces {
@@ -40,12 +39,12 @@ window#waybar {
   margin: 0px 0px;
   padding: 0px 5px;
   border-radius: 5px;
-  color: @fg;
+  color: @ylw;
 }
 
 #workspaces button.active {
     background: @blu;
-    color: @blk
+    color: @blk;
 }
 
 #workspaces button.empty {
@@ -53,7 +52,7 @@ window#waybar {
 }
 #workspaces button.empty.active {
     background: @ylw;
-    color: @blk
+    color: @blk;
 }
 
 #workspaces button.urgent {
