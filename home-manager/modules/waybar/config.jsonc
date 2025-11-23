@@ -76,12 +76,13 @@
 },
 
 "battery": {
+  "interval": 1,
   "states": {
-      "good": 80,
-      "warning": 30,
-      "critical": 10,
+    "good": 80,
+    "warning": 30,
+    "critical": 10,
   },
-  "format": "{icon} {capacity}%  {time}",
+  "format": "{icon} {capacity}%",
   "format-plugged": " {capacity}%",
   "format-alt": "{icon} {capacity}%",
   "format-time": "{H}:{M}",
@@ -89,7 +90,7 @@
 },
 
 "network": {
-  "interval": 2,
+  "interval": 1,
   //"format-wifi": " ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
   "format-wifi": " On",
   //"format-ethernet": "󰈀 ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
@@ -99,23 +100,11 @@
   "format-alt": "{ifname}: {ipaddr}/{cidr}",
 },
 
-"pulseaudio": {
-  "format": "{icon} {volume}%",
-  "format-bluetooth": "{icon} {volume}% -  {format_source}",
-  "format-bluetooth-muted": "{icon}  -  {format_source}",
-  "format-muted": " {format_source}",
-  "format-source": " {volume}%",
-  "format-source-muted": "",
-  "format-icons": {
-    "headphone": "",
-    "default": ["", "", ""],
-  },
-},
 
 "pulseaudio": {
-"format": "{icon} {volume}%",
-"format-bluetooth": "{icon} 󰂰 {volume}",
-"format-icons": {
+  "format": "{icon} {volume}%",
+  "format-bluetooth": "{icon} 󰂰 {volume}",
+  "format-icons": {
     "headphone": "",
     "hands-free": "",
     "headset": "",
@@ -128,10 +117,10 @@
     "ignored-sinks": [
       "Easy Effects Sink"
     ],
-},
-"scroll-step": 5.0,
-"tooltip-format": "{icon} {desc} | {volume}%",
-"smooth-scrolling-threshold": 1,
+  },
+  "scroll-step": 5.0,
+  "tooltip-format": "{icon} {desc} | {volume}%",
+  "smooth-scrolling-threshold": 1,
 },
 
 }

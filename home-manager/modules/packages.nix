@@ -13,7 +13,7 @@
     zip
     unzip
     fastfetch
-    nixfmt-rfc-style
+    # nixfmt-rfc-style
     # Monitoring
     acpi
     usbutils
