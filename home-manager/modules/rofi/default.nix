@@ -7,5 +7,4 @@
   home.file.".config/rofi/colors.rasi" = {
     source = ./colors.rasi;
   };
-
 }

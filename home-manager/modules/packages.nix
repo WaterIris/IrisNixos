@@ -32,10 +32,11 @@
     hyprlock
     dunst
     waybar
-    rofi
+    rofi-wayland
     wezterm
     kitty
     tmux
+    onlyoffice-desktopeditors
     # android-studio
     # android-tools
   ];

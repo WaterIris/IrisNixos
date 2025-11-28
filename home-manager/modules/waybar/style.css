@@ -37,9 +37,10 @@ window#waybar {
 
 #workspaces button {
   margin: 0px 0px;
-  padding: 0px 5px;
+  /*padding: 0px 5px;*/
   border-radius: 5px;
-  color: @ylw;
+  padding: 5 10px;
+  color: @mag;
 }
 
 #workspaces button.active {
@@ -51,7 +52,6 @@ window#waybar {
     color: @fg;
 }
 #workspaces button.empty.active {
-    background: @ylw;
     color: @blk;
 }
 

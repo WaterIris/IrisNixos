@@ -307,11 +307,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1761001329,
+        "lastModified": 1764341918,
         "narHash": "sha256-aXuZawDgptean1D+93vpwuFXEeRXKI1bJiqezD5qU/0=",
         "owner": "WaterIris",
         "repo": "IrisNixvim",
-        "rev": "81d2c28c25b4364710eb1760681223eb89f42bcc",
+        "rev": "ad61ea74fbcaca549100e6cf660ce9104168bac0",
         "type": "github"
       },
       "original": {
