@@ -10,5 +10,6 @@
     ./rofi
     ./tmux
     ./mono
+    ./scripts
   ];
 }
