@@ -4,6 +4,7 @@
 options=" Shutdown
  Reboot
  Suspend
+󰒲 Hibernate
  Lock
 󰗽 Logout
 Cancel"
@@ -19,6 +20,9 @@ case "$chosen" in
         ;;
     " Suspend")
         systemctl suspend
+        ;;
+    "󰒲 Hibernate")
+        systemctl hibernate
         ;;
     " Lock")
         hyprlock

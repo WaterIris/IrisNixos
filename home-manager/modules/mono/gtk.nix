@@ -22,7 +22,7 @@
 
     font = {
       name = "Mononoki Nerd Font Bold";
-      size = 13;
+      size = 14;
     };
   };
 }

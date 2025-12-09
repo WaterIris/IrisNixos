@@ -29,5 +29,5 @@
     };
     open = false;
   };
-  boot.kernelParams = [ "pcie_aspm=off" ];
+  boot.kernelParams = [ "pcie_aspm=off"];
 }
