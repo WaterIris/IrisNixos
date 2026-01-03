@@ -40,7 +40,7 @@
     pulse.enable = true;
   };
 
-  services.logind.lidSwitch = "ignore";
+  services.logind.settings.Login.HandleLidSwitch = "ignore";
   services.tlp = {
     enable = true;
     settings = {
@@ -75,5 +75,5 @@
     pkgs.wget
     pkgs.git
   ];
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }
