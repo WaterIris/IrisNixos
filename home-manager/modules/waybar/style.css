@@ -16,20 +16,22 @@
   font-family: "Mononoki Nerd Font Propo";
   font-size: 17px;
   font-weight: bold;
-  /*opacity: 1.0;*/
   border: none;
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: none;
   text-shadow: none;
 }
 
 window#waybar {
   color: @fg;
-  background: alpha(@bg, 1);
+  background: alpha(@bg, 0);
 }
 
 #workspaces {
-  margin: 4px 4px;
+  margin: 0px 4px;
+  padding: 5 10px;
+  border-radius: 8px;
+  background: alpha(@bg, 1);
 }
 
 #workspaces button {
@@ -66,7 +68,24 @@ button:hover {
 #network,
 #pulseaudio,
 #tray {
-    margin: 0px 0px;
-    padding: 0px 5px;
-    color: @fg;
+  margin: 0px 4px;
+  padding: 5 10px;
+  border-radius: 8px;
+  color: @fg;
+  background: alpha(@bg, 1);
+}
+
+#battery {
+    color: @grn
+}
+#memory {
+    color: @ylw
+}
+
+#network,
+#pulseaudio{
+    color: @blu
+}
+#clock{
+    color: @mag
 }

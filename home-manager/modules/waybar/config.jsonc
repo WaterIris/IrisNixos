@@ -10,84 +10,84 @@
 "reload_style_on_change": true,
 
 "modules-left": [
-  "battery",
-  "network",
-  "pulseaudio",
+    "battery",
+    "network",
+    "pulseaudio",
 ],
 
 "modules-center": [
-  "hyprland/workspaces",
+    "hyprland/workspaces",
 ],
 
 "modules-right": [
-  "memory",
-  "clock",
+    "memory",
+    "clock",
 ],
 
 "hyprland/workspaces": {
-  "disable-scroll": true,
-  "all-outputs": false,
-  "warp-on-scroll": false,
-  "format": "{icon}",
-  "format-icons": {
-    "default": "",
-    "empty": "",
-    "active": "",
-    "urgent": "",
-  },
-  "persistent-workspaces": {
-    "1": "1",
-    "2": "2",
-    "3": "3",
-    "4": "4",
-    "5": "5",
-    "6": "6",
-  },
+    "disable-scroll": true,
+    "all-outputs": false,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+	"default": "",
+	"empty": "",
+	"active": "",
+	"urgent": "",
+    },
+    "persistent-workspaces": {
+	"1": "1",
+	"2": "2",
+	"3": "3",
+	"4": "4",
+	"5": "5",
+	"6": "6",
+    },
 },
 
 "hyprland/window": {
-  "max-length": 40,
-  "seperate-outputs": false,
+    "max-length": 40,
+    "seperate-outputs": false,
 },
 
 "clock": {
-  "format": " {:%H:%M}",
-  "format-alt": "{:%Y-%m-%d}",
-  "locale": "pl_PL.UTF-8",
-  "timezones": [ "Europe/Warsaw" ],
+    "format": " {:%H:%M}",
+    "format-alt": "{:%Y-%m-%d}",
+    "locale": "pl_PL.UTF-8",
+    "timezones": [ "Europe/Warsaw" ],
 },
 
 "cpu": {
-  "format": " {usage}%",
-  "tooltip": false,
+    "format": " {usage}%",
+    "tooltip": false,
 },
 
 "memory": {
-  "format": " {used}GiB",
+    "format": " {used}GiB",
 },
 
 "disk": {
-  "interval": 60,
-  "path": "/",
-  "format": " {free}",
+    "interval": 60,
+    "path": "/",
+    "format": " {free}",
 },
 
 "battery": {
-  "interval": 1,
-  "states": {
-    "good": 80,
-    "warning": 30,
-    "critical": 10,
-  },
-  "format": "{icon} {capacity}%",
-  "format-plugged": " {capacity}%",
-  "format-alt": "{icon} {capacity}%",
-  "format-time": "{H}:{M}",
-  "format-icons": ["", "", "", "",""],
+    "interval": 1,
+    "states": {
+	"good": 80,
+	"warning": 30,
+	"critical": 10,
+    },
+    "format": "{icon} {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {capacity}%",
+    "format-time": "{H}:{M}",
+    "format-icons": ["", "", "", "",""],
 },
 
 "network": {
-  "interval": 1,
+    "interval": 1,
   //"format-wifi": " ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
   "format-wifi": " On",
   //"format-ethernet": "󰈀 ↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}",
@@ -99,25 +99,24 @@
 
 
 "pulseaudio": {
-  "format": "{icon} {volume}%",
-  "format-bluetooth": "{icon} 󰂰 {volume}",
-  "format-icons": {
-    "headphone": "",
-    "hands-free": "",
-    "headset": "",
-    "phone": "",
-    "portable": "",
-    "car": "",
-    "default": [
-      "", "", "󰕾",  ""
-    ],
-    "ignored-sinks": [
-      "Easy Effects Sink"
-    ],
-  },
-  "scroll-step": 5.0,
-  "tooltip-format": "{icon} {desc} | {volume}%",
-  "smooth-scrolling-threshold": 1,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} 󰂰 {volume}",
+    "format-icons": {
+	"headphone": "",
+	"hands-free": "",
+	"headset": "",
+	"phone": "",
+	"portable": "",
+	"car": "",
+	"default": [
+	    "", "", "󰕾",  ""
+	],
+	"ignored-sinks": [
+	    "Easy Effects Sink"
+	],
+    },
+    "scroll-step": 5.0,
+    "tooltip-format": "{icon} {desc} | {volume}%",
+    "smooth-scrolling-threshold": 1,
 },
-
 }
