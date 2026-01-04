@@ -5,7 +5,7 @@
 }:
 {
   home.packages = with pkgs; [
-    inputs.nixvim.packages.${system}.default # enable nixvim flake
+    # inputs.nixvim.packages.${system}.default # enable nixvim flake
     # Terminal apps
     ripgrep # better grep
     fd # better find
@@ -37,6 +37,10 @@
     kitty
     tmux
     onlyoffice-desktopeditors
-    vscode-fhs
+    neovim
+    #lsps
+    lua-language-server
+    ruff
+    basedpyright
   ];
 }

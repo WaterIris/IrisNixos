@@ -3,12 +3,14 @@
   home.pointerCursor = {
     gtk.enable = true;
     package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
+    # name = "Bibata-Modern-Classic";
+    name = "Bibata-Modern-Ice";
     size = 12;
   };
 
   gtk = {
     enable = true;
+    colorScheme = "dark";
 
     theme = {
       package = pkgs.flat-remix-gtk;
