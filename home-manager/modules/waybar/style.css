@@ -23,36 +23,30 @@
   text-shadow: none;
 }
 
-/*bar itself*/
 window#waybar {
   color: @fg;
   background: alpha(@bg, 1);
-  /*border-radius: 5px;*/
 }
 
 #workspaces {
   margin: 4px 4px;
-  border-radius: 5px;
 }
 
 #workspaces button {
   margin: 0px 0px;
-  /*padding: 0px 5px;*/
-  border-radius: 5px;
   padding: 5 10px;
-  color: @mag;
+  color: @blu;
 }
 
 #workspaces button.active {
-    background: @blu;
-    color: @blk;
+    color: @grn;
 }
 
 #workspaces button.empty {
     color: @fg;
 }
 #workspaces button.empty.active {
-    color: @blk;
+    color: @grn;
 }
 
 #workspaces button.urgent {
