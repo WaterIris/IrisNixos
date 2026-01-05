@@ -5,7 +5,7 @@
     package = pkgs.bibata-cursors;
     # name = "Bibata-Modern-Classic";
     name = "Bibata-Modern-Ice";
-    size = 12;
+    size = 16;
   };
 
   gtk = {
@@ -24,7 +24,7 @@
 
     font = {
       name = "Mononoki Nerd Font Bold";
-      size = 14;
+      size = 13;
     };
   };
 }
