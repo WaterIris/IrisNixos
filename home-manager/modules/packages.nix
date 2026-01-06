@@ -38,10 +38,12 @@
     tmux
     onlyoffice-desktopeditors
     neovim
-    zed-editor
+    # zed-editor-fhs
     #lsps
-    lua-language-server
+    # lua-language-server
     ruff
-    basedpyright
+    pyright
+    # mypy
+    # basedpyright
   ];
 }
