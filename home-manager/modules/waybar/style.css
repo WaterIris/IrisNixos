@@ -1,20 +1,26 @@
-@define-color bg    #1a1b26; 
-@define-color fg    #a9b1d6; 
-@define-color blk   #24283b; 
-@define-color red   #f7768e; 
-@define-color grn   #9ece6a; 
-@define-color ylw   #e0af68; 
-@define-color blu   #7aa2f7; 
-@define-color mag   #ad8ee6; 
-@define-color cyn   #0db9d7; 
-@define-color brblk #414868; 
-@define-color white #ffffff; 
-@define-color bgpop #1E2030;
+@define-color foreground #e0def4;
+@define-color background #191724;
+
+
+@define-color subtle #908caa;
+@define-color surface #1f1d2e;
+
+
+@define-color red #eb6f92;
+@define-color red-surface #2E202F;
+
+@define-color pine #31748f;
+@define-color pine-surface #1B202F;
+
+@define-color yellow #f6c177;
+@define-color blue #9ccfd8;
+@define-color magenta #c4a7e7;
+@define-color rose #ebbcba;
 
 * {
   all:unset;  
   font-family: "Mononoki Nerd Font Propo";
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 0px;
@@ -23,69 +29,39 @@
 }
 
 window#waybar {
-  color: @fg;
-  background: alpha(@bg, 1);
+  color: @foreground;
+  background: @background;
 }
 
 #workspaces {
-  margin: 0px 4px;
-  padding: 5 10px;
+  margin: 0px 10px;
   border-radius: 8px;
-  background: alpha(@bg, 1);
 }
-
+/* Workspaces */
 #workspaces button {
-  margin: 0px 0px;
-  padding: 5 10px;
-  color: @blu;
+    padding: 2px 6px;
+    color: @rose;
+    background: @surface;
+    
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: @surface;
 }
 
 #workspaces button.active {
-    color: @grn;
+    color: @red;
+    border-color: @red-surface;
 }
-
 #workspaces button.empty {
-    color: @fg;
+    color: @subtle;
 }
 #workspaces button.empty.active {
-    color: @grn;
-}
-
-#workspaces button.urgent {
     color: @red;
 }
+/* Clock */
 
-button:hover {
-    color: @blu;
-}
-
-#clock,
-#custom-sep,
-#battery,
-#cpu,
-#memory,
-#disk,
-#network,
-#pulseaudio,
-#tray {
-  margin: 0px 4px;
-  padding: 5 10px;
-  border-radius: 8px;
-  color: @fg;
-  background: alpha(@bg, 1);
-}
-
-#battery {
-    color: @grn
-}
-#memory {
-    color: @ylw
-}
-
-#network,
-#pulseaudio{
-    color: @blu
-}
-#clock{
-    color: @mag
+#clock, #memory, #network, #battery, #pulseaudio{
+    margin: 0px 10px;
+    color: @subtle;
 }

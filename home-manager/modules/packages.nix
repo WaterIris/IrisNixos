@@ -38,6 +38,7 @@
     tmux
     onlyoffice-desktopeditors
     neovim
+    zed-editor
     #lsps
     lua-language-server
     ruff
