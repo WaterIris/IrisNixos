@@ -4,7 +4,7 @@
     source = ./config.rasi;
   };
 
-  home.file.".config/rofi/colors.rasi" = {
-    source = ./colors.rasi;
-  };
+  # home.file.".config/rofi/colors.rasi" = {
+  #   source = ./colors.rasi;
+  # };
 }

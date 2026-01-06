@@ -1,3 +1,43 @@
+* {
+    xbg:    #101319;
+    xfg:    #f4f3ee;
+    x0:     #171b24;
+    x1:     #E34F4F;
+    x2:     #69bfce;
+    x3:     #e37e4f;
+    x4:     #5679E3;
+    x5:     #956dca;
+    x6:     #5599E2;
+    x7:     #f4f3ee;
+    x8:     #3A435A;
+    x9:     #DE2B2B;
+    x10:    #56B7C8;
+    x11:    #DE642B;
+    x12:    #3E66E0;
+    x13:    #885AC4;
+    x14:    #3F8CDE;
+    x15:    #DDDBCF;
+
+    foreground: #e0def4;
+    background: #191724;
+
+    subtle: #908caa;
+    surface: #1f1d2e;
+
+    red: #eb6f92;
+    red-surface: #2E202F;
+
+    pine: #31748f;
+    pine-surface: #1B202F;
+
+    yellow: #f6c177;
+    blue: #9ccfd8;
+    magenta: #c4a7e7;
+    rose: #ebbcba;
+
+}
+
+
 configuration {
     modes: "drun";
     font: "Mononoki Nerd Font Propo bold 16";
@@ -11,26 +51,15 @@ configuration {
     sort: true;
     sorting-method: "levenshtein";
     combi-hide-mode-prefix: false;
-    display-run: "";
-    display-ssh: "";
     display-drun: "";
-    display-combi: "󰕘";
-    kb-row-up: "Up,Control+p,Alt+k";
-    kb-row-down: "Down,Control+n,Alt+j";
-    kb-element-next: "Tab";
-    kb-element-prev: "ISO_Left_Tab";
-    me-accept-entry: "MousePrimary";
 }
 
 window {
     background-color: @xbg;
     border: 0px;
-    border-color: @x0;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 0px;
     width: 500px;
-    /* TODO: percentage height is buggy on rofi's wayland fork */
-    /* height: 50%; */
     height: 350px;
 }
 
@@ -177,4 +206,4 @@ textbox-prompt-colon {
     text-color: inherit;
 }
 
-@import "colors.rasi"
+// @import "colors.rasi"
