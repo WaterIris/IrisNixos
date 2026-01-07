@@ -1,23 +1,4 @@
 * {
-    xbg:    #101319;
-    xfg:    #f4f3ee;
-    x0:     #171b24;
-    x1:     #E34F4F;
-    x2:     #69bfce;
-    x3:     #e37e4f;
-    x4:     #5679E3;
-    x5:     #956dca;
-    x6:     #5599E2;
-    x7:     #f4f3ee;
-    x8:     #3A435A;
-    x9:     #DE2B2B;
-    x10:    #56B7C8;
-    x11:    #DE642B;
-    x12:    #3E66E0;
-    x13:    #885AC4;
-    x14:    #3F8CDE;
-    x15:    #DDDBCF;
-
     foreground: #e0def4;
     background: #191724;
 
@@ -34,7 +15,6 @@
     blue: #9ccfd8;
     magenta: #c4a7e7;
     rose: #ebbcba;
-
 }
 
 
@@ -42,7 +22,8 @@ configuration {
     modes: "drun";
     font: "Mononoki Nerd Font Propo bold 16";
     fixed-num-lines: true;
-    show-icons: false;
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
     sidebar-mode: false;
     scroll-method: 1;
     window-format: "{t:50} ·· {c}";
@@ -55,155 +36,141 @@ configuration {
 }
 
 window {
-    background-color: @xbg;
-    border: 0px;
-    border-radius: 8px;
+    background-color: @surface;
+    text-color: @foreground;
+    border: 0;
     padding: 0px;
-    width: 500px;
-    height: 350px;
+    border-radius: 8px;
+    width: 400px;
+    height: 328px;
 }
-
+// Almost the same thing as window idk
 mainbox {
     border: 0;
-    border-color: @x0;
     padding: 0px;
-}
-
-message {
-    border: 0px;
-    padding: 6px 30px;
-    background-color: @x0;
-}
-
-/* Message text */
-textbox {
-    text-color: @x7;
-}
-
-listview {
-    fixed-height: 0;
-    border: 0px;
-    border-color: @x6;
-    spacing: 2px;
-    scrollbar: false;
-    lines: 8;
-    columns: 1;
-}
-
-element {
-    border: 0;
-    padding: 10px 25px;
-}
-
-element normal.normal {
-    background-color: rgba (0,0,0,0%);
-    text-color:       @xfg;
-}
-
-element normal.urgent {
-    background-color: rgba (0,0,0,0%);
-    text-color:       @x1;
-}
-
-element normal.active {
-    background-color: rgba (0,0,0,0%);
-    text-color:       @x5;
-}
-
-element selected.normal {
-    background-color: @x0;
-    text-color:       @x4;
-}
-
-element selected.urgent {
-    background-color: @x0;
-    text-color:       @x4;
-}
-
-element selected.active {
-    background-color: @x0;
-    text-color:       @x4;
-}
-
-element alternate.normal {
-    background-color: rgba (0,0,0,0%);
-    text-color:       @xfg;
-}
-
-element alternate.urgent {
-    background-color: rgba (0,0,0,0%);
-    text-color:       @x1;
-}
-
-element alternate.active {
-    background-color: rgba (0,0,0,0%);
-    text-color:       @x5;
-}
-
-scrollbar {
-    width:        4px ;
-    border:       0;
-    handle-color: @xfg;
-    handle-width: 8px ;
-    padding:      0;
-}
-
-sidebar {
-    border:       0px;
-    border-color: @x4;
-    border-radius: 20px;
-}
-
-button {
-  /* font: "sans Medium 11"; */
-  font: "Mononoki Nerd Font Propo bold 16";
-  background-color: @x0;
-  text-color: @x8;
-  border: 0px;
-  border-color: @x8;
-
-  border-radius: 0px;
-  margin: 0;
-  padding: 18px;
-}
-
-button selected {
-    background-color: @x0;
-    text-color: @x7;
-    border: 0px;
-    border-color: @x7;
 }
 
 inputbar {
+    background-color: @surface;
     spacing: 0px;
-    background-color: @xbg;
-    padding: 25px 25px 15px 25px;
+    padding: 10px 10px 10px 10px;
     children: [prompt, textbox-prompt-colon, entry];
-}
-
-case-indicator {
-    spacing:    0;
-    text-color: @xfg;
-}
-
-entry {
-    spacing:    0;
-    text-color: @xfg;
-    /* placeholder text in input field */
-    placeholder: "";
 }
 
 prompt {
     spacing:    0;
     border:     0;
-    text-color: @x1;
+    text-color: @pine;
 }
 
 textbox-prompt-colon {
-    expand:     false;
-    str:        " ";
-    /* margin:     0px 0.3000em 0.0000em 0.0000em ; */
-    text-color: inherit;
+    expand: false;
+    str: " ";
+    text-color: @pine;
 }
 
-// @import "colors.rasi"
+entry {
+    spacing:    0;
+    text-color: @red;
+    placeholder: "";
+}
+
+// Cant find ...
+message {
+    border: 0px;
+    padding: 6px 30px;
+
+    background-color: @red-surface;
+    text-color: @red;
+}
+// After using rofi -e "string"
+textbox {
+    background-color: @pine-surface;
+    text-color: @pine;
+}
+// List of items
+// border-color invisible to me 
+listview {
+    spacing: 0px;
+    fixed-height: 0px;
+    border: 0px;
+    border-color: @red;
+    scrollbar: false;
+    columns: 1;
+    
+}
+// List entries
+element {
+    border: 0;
+    padding: 8px 8px;
+}
+//
+element normal.normal {
+    background-color: @surface;
+    text-color: @subtle;
+}
+
+element alternate.normal {
+    background-color: @surface;
+    text-color: @subtle;
+}
+
+
+element selected.normal {
+    background-color: @red-surface;
+    text-color:       @red;
+}
+
+// element normal.urgent {
+//     background-color: rgba (0,0,0,0%);
+//     text-color:       @x1;
+// }
+// element normal.active {
+//     background-color: rgba (0,0,0,0%);
+//     text-color:       @x5;
+// }
+// element selected.urgent {
+//     background-color: @x0;
+//     text-color:       @x4;
+// }
+// element selected.active {
+//     background-color: @x0;
+//     text-color:       @x4;
+// }
+// element alternate.urgent {
+//     background-color: rgba (0,0,0,0%);
+//     text-color:       @x1;
+// }
+// element alternate.active {
+//     background-color: rgba (0,0,0,0%);
+//     text-color:       @x5;
+// }
+// scrollbar {
+//     width:        4px ;
+//     border:       0;
+//     handle-color: @xfg;
+//     handle-width: 8px ;
+//     padding:      0;
+// }
+// sidebar {
+//     border: 0px;
+//     border-color: @yellow;
+//     border-radius: 20px;
+// }
+// button {
+//   font: "Mononoki Nerd Font Propo bold 16";
+//   background-color: @x0;
+//   text-color: @yellow;
+//   border: 0px;
+//   border-color: @x8;
+//
+//   border-radius: 0px;
+//   margin: 0;
+//   padding: 18px;
+// }
+// button selected {
+//     background-color: @x0;
+//     text-color: @x7;
+//     border: 0px;
+//     border-color: @x7;
+// }

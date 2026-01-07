@@ -38,6 +38,7 @@
     tmux
     onlyoffice-desktopeditors
     neovim
+    papirus-icon-theme
     # zed-editor-fhs
     #lsps
     # lua-language-server
