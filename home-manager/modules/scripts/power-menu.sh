@@ -9,7 +9,7 @@ options=" Shutdown
 󰗽 Logout
 Cancel"
 
-chosen="$(echo -e "$options" | rofi -dmenu -p "Power" -i)"
+chosen="$(echo -e "$options" | rofi -dmenu -no-show-icons -p "Power" -i)"
 
 case "$chosen" in
     " Shutdown")
