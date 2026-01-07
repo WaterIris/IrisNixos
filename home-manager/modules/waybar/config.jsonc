@@ -81,17 +81,17 @@
 },
 
 "battery": {
+    "interval": 30,
     "states": {
-	    // "good": 95,
-	    "warning": 30,
-	    "critical": 15
+	"good": 75,
+        "warning": 30,
+        "critical": 20
     },
     "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["", "", "", "", ""],
+    "on-update": "~/.config/waybar/scripts/battery-alert.sh"
 },
 
 "network": {
@@ -100,7 +100,7 @@
     "format-ethernet": "󰈀",
     "format-disconnected": "󰖪",
     "tooltip-format": "{ifname} via {gwaddr}",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
 },
 
 

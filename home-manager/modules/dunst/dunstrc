@@ -8,7 +8,7 @@
 
     ### Geometry ###
     # dynamic width from 0 to 700
-    width = (0, 300)
+    width = (0, 700)
     # constant width of 400
     # width = 400
 
@@ -19,7 +19,7 @@
     origin = bottom-right
 
     # Offset from the origin
-    offset = 20x80
+    offset = 8x120
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
