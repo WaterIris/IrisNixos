@@ -41,10 +41,11 @@
     papirus-icon-theme
     # zed-editor-fhs
     #lsps
-    # lua-language-server
+    lua-language-server
+    tree-sitter
+    clang
+    luarocks
     ruff
-    pyright
-    # mypy
-    # basedpyright
+    basedpyright
   ];
 }

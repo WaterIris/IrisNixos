@@ -8,7 +8,7 @@
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     # Nixvim
-    nixvim.url = "github:WaterIris/IrisNixvim";
+    # nixvim.url = "github:WaterIris/IrisNixvim";
   };
 
   outputs =
