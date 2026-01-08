@@ -24,6 +24,7 @@
     blueman
     obsidian
     nemo
+    eog
     # Wayland specific
     wl-clipboard
     hyprpicker
