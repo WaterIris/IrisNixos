@@ -10,4 +10,9 @@
     source = ./hyprlock.conf;
   };
 
+  home.file.".config/hypr/source" = {
+    source = ./source;
+    recursive = true;
+  };
+
 }
