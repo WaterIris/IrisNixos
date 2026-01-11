@@ -97,7 +97,8 @@
     "interval": 1,
     "format-wifi": "",
     "format-ethernet": "󰈀",
-    "format-disconnected": "󰖪"
+    "format-disconnected": "󰖪",
+    "on-click": "~/.config/waybar/scripts/nmapplet.sh"
 },
 
 "temperature": {

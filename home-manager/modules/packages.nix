@@ -25,6 +25,7 @@
     obsidian
     nemo
     eog
+    networkmanagerapplet
     # Wayland specific
     wl-clipboard
     hyprpicker

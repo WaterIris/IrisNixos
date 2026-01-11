@@ -9,7 +9,10 @@
     ./waybar
     ./rofi
     ./tmux
-    ./mono
     ./scripts
+    ./git.nix
+    ./gtk.nix
+    ./bash.nix
+    ./zsh.nix
   ];
 }
