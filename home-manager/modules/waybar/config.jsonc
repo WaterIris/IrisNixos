@@ -19,6 +19,7 @@
 ],
 
 "modules-right": [
+    "backlight",
     "bluetooth",
     "network",
     "temperature",
@@ -82,6 +83,12 @@
     "tooltip-format": "Volume: {volume}%",
     "smooth-scrolling-threshold": 1,
     "on-click": "~/.config/waybar/scripts/pavucontrol.sh"
+},
+
+"backlight": {
+    "format": "{icon}\n{percent}",
+    "format-icons": ["󰃜", "󰃞", "󰃟", "󰃝", "󰃠"],
+    "tooltip-format": "Screen brightness: {percent}%"
 },
 
 "bluetooth": {

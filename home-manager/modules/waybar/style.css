@@ -73,7 +73,17 @@ tooltip label {
 }
 /* Clock */
 
-#clock,#memory, #cpu, #disk,#custom-power,#pulseaudio,#network,#temperature,#battery,#bluetooth{
+#clock,
+#memory, 
+#cpu, 
+#disk,
+#custom-power,
+#pulseaudio,
+#network,
+#temperature,
+#battery,
+#bluetooth,
+#backlight{
     border-radius: 10px;
     margin: 6px 6px;
     padding: 4px 4px;
