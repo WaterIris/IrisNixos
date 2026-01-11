@@ -15,4 +15,9 @@
     recursive = true;
   };
 
+  home.file.".config/hypr/assets" = {
+    source = ./assets;
+    recursive = true;
+  };
+
 }
