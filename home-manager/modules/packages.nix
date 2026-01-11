@@ -30,6 +30,7 @@
     onlyoffice-desktopeditors
     wezterm
     kitty
+    qbittorrent
     # Wayland specific
     wl-clipboard
     hyprpicker
