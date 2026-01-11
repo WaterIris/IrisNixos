@@ -32,13 +32,13 @@
     "sort-by-number": true,
     "disable-scroll": true,
     "all-outputs": true,
-    "format-icons": {
-	    "urgent": "[!]",
-	    "focused": "[]",
-	    "default": "[]"
-    },
+    // "format-icons": {
+    //  "urgent": "[!]",
+    //  "focused": "[]",
+    //  "default": "[]"
+    // },
     "persistent-workspaces": {
-	"*": [ 1,2,3,4,5,6 ]
+	// "*": [ 1,2,3,4,5,6 ]
     }
 },
 

@@ -13,6 +13,7 @@
     zip
     unzip
     fastfetch
+    tmux
     # nixfmt-rfc-style
     # Monitoring
     acpi
@@ -26,23 +27,23 @@
     nemo
     eog
     networkmanagerapplet
+    onlyoffice-desktopeditors
+    wezterm
+    kitty
     # Wayland specific
     wl-clipboard
     hyprpicker
     hyprpaper
     hyprshot
     hyprlock
-    dunst
     waybar
+    #Other
+    dunst
     rofi
-    wezterm
-    kitty
-    tmux
-    onlyoffice-desktopeditors
+    # eww
+    # Neovim
     neovim
     papirus-icon-theme
-    # zed-editor-fhs
-    #lsps
     lua-language-server
     tree-sitter
     clang
