@@ -35,6 +35,7 @@
     wl-clipboard
     hyprpicker
     hyprpaper
+    hypridle
     hyprshot
     hyprlock
     waybar
