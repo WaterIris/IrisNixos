@@ -48,6 +48,8 @@
       STOP_CHARGE_THRESH_BAT0 = 1; # Actualy enables conservation mode
       };
   };
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
   
   programs.hyprland = {
     enable = true;

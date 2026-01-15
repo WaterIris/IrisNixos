@@ -14,12 +14,17 @@
     unzip
     fastfetch
     tmux
+    udiskie
+    libmtp
+    file
+    epubcheck
     # nixfmt-rfc-style
     # Monitoring
     acpi
     usbutils
     libnotify
     # Gui apps
+    foliate
     firefox
     pavucontrol
     blueman
@@ -31,6 +36,8 @@
     wezterm
     kitty
     qbittorrent
+    mpv
+    calibre
     # Wayland specific
     wl-clipboard
     hyprpicker
