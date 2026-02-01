@@ -18,13 +18,16 @@
     libmtp
     file
     epubcheck
+    tesseract
+    slurp
+    grim
     # nixfmt-rfc-style
     # Monitoring
     acpi
     usbutils
     libnotify
     # Gui apps
-    foliate
+    vmware-workstation
     firefox
     pavucontrol
     blueman
@@ -38,6 +41,9 @@
     qbittorrent
     mpv
     calibre
+    planify
+    foliate
+    # discord
     # Wayland specific
     wl-clipboard
     hyprpicker
@@ -58,6 +64,6 @@
     clang
     luarocks
     ruff
-    basedpyright
+    ty
   ];
 }

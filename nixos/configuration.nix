@@ -57,6 +57,7 @@
   };
 
   console.keyMap = "pl2";
+  virtualisation.vmware.host.enable = true;
 
   users.users.iris = {
     isNormalUser = true;
