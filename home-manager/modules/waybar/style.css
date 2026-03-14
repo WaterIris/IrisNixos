@@ -1,21 +1,20 @@
-@define-color foreground #e0def4;
-@define-color background #191724;
+@define-color foreground #c0caf5;
+@define-color background #1a1b26;
 
 
-@define-color subtle #908caa;
-@define-color surface #1f1d2e;
+@define-color subtle #545c7e;
+@define-color surface #15161e;
 
 
-@define-color red #eb6f92;
+@define-color red #f7768e;
 @define-color red-surface #2E202F;
 
-@define-color pine #31748f;
+@define-color pine #7dcfff;
 @define-color pine-surface #1B202F;
 
-@define-color yellow #f6c177;
-@define-color blue #9ccfd8;
-@define-color magenta #c4a7e7;
-@define-color rose #ebbcba;
+@define-color yellow #e0af68;
+@define-color blue #7aa2f7;
+@define-color magenta #bb9af7;
 
 * {
   all:unset;  
@@ -51,7 +50,7 @@ tooltip label {
 #workspaces button {
     padding: 2px 4px;
     margin: 6px 6px;
-    color: @rose;
+    color: @blue;
     background: @surface;
     
     border-style: solid;
@@ -63,7 +62,6 @@ tooltip label {
 
 #workspaces button.active {
     color: @red;
-    background: @red-surface;
 }
 #workspaces button.empty {
     color: @subtle;
