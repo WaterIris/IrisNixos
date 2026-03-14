@@ -21,13 +21,14 @@
     tesseract
     slurp
     grim
+    btop
     # nixfmt-rfc-style
     # Monitoring
     acpi
     usbutils
     libnotify
     # Gui apps
-    vmware-workstation
+    # vmware-workstation
     firefox
     pavucontrol
     blueman
@@ -41,7 +42,9 @@
     qbittorrent
     mpv
     calibre
-    planify
+    baobab
+    vscode-fhs
+    # planify
     foliate
     # discord
     # Wayland specific
@@ -63,7 +66,7 @@
     tree-sitter
     clang
     luarocks
-    ruff
-    ty
+    # ruff
+    # ty
   ];
 }

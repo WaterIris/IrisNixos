@@ -9,6 +9,7 @@
     ./waybar
     ./rofi
     ./tmux
+    ./mpv
     ./scripts
     ./git.nix
     ./gtk.nix

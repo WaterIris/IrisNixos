@@ -5,9 +5,11 @@
     enableZshIntegration = true;
     settings = {
       add_newline = false;
+
       directory = {
         truncation_length = 0;
         truncate_to_repo = false;
+	style = "blue";
       };
 
       character = {
@@ -17,6 +19,7 @@
 
       hostname = {
         ssh_symbol = " ";
+	style="green";
       };
 
       git_branch = {
