@@ -1,4 +1,4 @@
-{...}:
+{ ... }:
 {
   home.file.".config/wallpapers" = {
     source = ./images;

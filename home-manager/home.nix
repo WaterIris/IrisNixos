@@ -7,7 +7,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   imports = [
     ./modules
   ];
@@ -22,7 +23,6 @@
     username = "iris";
     homeDirectory = "/home/iris";
   };
-
 
   programs.home-manager.enable = true;
   # programs.git.enable = true;

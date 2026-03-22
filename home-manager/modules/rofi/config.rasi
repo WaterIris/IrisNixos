@@ -6,10 +6,10 @@
     surface: #15161e;
 
     red: #f7768e;
-    red-surface: #2E202F;
+    red-surface: #2F212F;
 
-    pine: #7dcfff;
-    pine-surface: #1B202F;
+    pine: #7aa2f7;
+    pine-surface: #232539;
 
     yellow: #e0af68;
     blue: #7aa2f7;

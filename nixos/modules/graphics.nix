@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
   services = {
@@ -8,17 +8,17 @@
       xkb = {
         layout = "pl";
         variant = "";
-        };
+      };
     };
     # displayManager = {
     #   sddm.enable = true;
     #   defaultSession = "hyprland";
     # };
   };
-    
+
   hardware.graphics = {
     enable = true;
-    enable32Bit = true;  
+    enable32Bit = true;
   };
 
   hardware.nvidia = {
@@ -29,5 +29,5 @@
     };
     open = false;
   };
-  boot.kernelParams = [ "pcie_aspm=off"];
+  boot.kernelParams = [ "pcie_aspm=off" ];
 }

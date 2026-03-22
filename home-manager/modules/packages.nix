@@ -44,9 +44,7 @@
     calibre
     baobab
     vscode-fhs
-    # planify
     foliate
-    # discord
     # Wayland specific
     wl-clipboard
     hyprpicker
@@ -66,6 +64,8 @@
     tree-sitter
     clang
     luarocks
+    nixfmt
+    nil
     # ruff
     # ty
   ];

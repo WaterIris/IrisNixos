@@ -1,12 +1,16 @@
-{ config, pkgs, inputs, ... }:
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-      ./modules/fonts.nix
-      ./modules/bluetooth.nix
-      ./modules/graphics.nix
-    ];
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
+{
+  imports = [
+    ./hardware-configuration.nix
+    ./modules/fonts.nix
+    ./modules/bluetooth.nix
+    ./modules/graphics.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -31,7 +35,7 @@
     LC_TELEPHONE = "pl_PL.UTF-8";
     LC_TIME = "pl_PL.UTF-8";
   };
-    
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -46,11 +50,11 @@
     settings = {
       START_CHARGE_THRESH_BAT0 = 0; # Dummy value
       STOP_CHARGE_THRESH_BAT0 = 1; # Actualy enables conservation mode
-      };
+    };
   };
   services.udisks2.enable = true;
   services.gvfs.enable = true;
-  
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -62,19 +66,25 @@
   users.users.iris = {
     isNormalUser = true;
     description = "iris";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    packages = with pkgs; [ ];
   };
 
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   # services.openssh.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [
-    inputs.home-manager.packages.${pkgs.system}.default    
-    pkgs.vim 
+    inputs.home-manager.packages.${pkgs.system}.default
+    pkgs.vim
     pkgs.wget
     pkgs.git
   ];
