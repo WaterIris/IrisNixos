@@ -59,6 +59,7 @@
     enable = true;
     xwayland.enable = true;
   };
+  programs.nix-ld.enable = true;
 
   console.keyMap = "pl2";
   virtualisation.vmware.host.enable = true;
@@ -72,7 +73,6 @@
     ];
     packages = with pkgs; [ ];
   };
-
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [
     "nix-command"

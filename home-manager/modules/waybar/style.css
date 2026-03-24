@@ -29,7 +29,7 @@
 
 window#waybar {
   color: @foreground;
-  background: @background;
+  background: @surface;
 }
 
 tooltip {
@@ -50,13 +50,12 @@ tooltip label {
 #workspaces button {
     padding: 2px 4px;
     margin: 6px 6px;
-    color: @blue;
-    background: @surface;
-    
+    color: @magenta;
+    background: @background;
+    border-color: @background;
     border-style: solid;
     border-radius: 10px;
     /* border-radius: 8px; */
-    border-color: @surface;
     transition: all 0.2s ease;
 }
 
@@ -86,7 +85,7 @@ tooltip label {
     margin: 6px 6px;
     padding: 4px 4px;
     color: @subtle;
-    background: @surface;
+    background: @background;
 }
 
 #clock{

@@ -12,8 +12,8 @@
         style = "blue";
       };
       character = {
-        success_symbol = "❯";
-        error_symbol = "❯";
+        success_symbol = "[❯](#bb9af7)";
+        error_symbol = "[❯](#f7768e)";
       };
       hostname = {
         ssh_symbol = " ";
