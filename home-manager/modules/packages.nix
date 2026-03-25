@@ -22,13 +22,13 @@
     slurp
     grim
     btop
-    # nixfmt-rfc-style
+    lazygit
+    # television
     # Monitoring
     acpi
     usbutils
     libnotify
     # Gui apps
-    # vmware-workstation
     firefox
     pavucontrol
     blueman
@@ -56,8 +56,6 @@
     #Other
     dunst
     rofi
-    # eww
-    # Neovim
     neovim
     papirus-icon-theme
     lua-language-server
@@ -66,7 +64,5 @@
     luarocks
     nixfmt
     nil
-    # ruff
-    # ty
   ];
 }

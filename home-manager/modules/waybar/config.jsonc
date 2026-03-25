@@ -3,6 +3,8 @@
 "position": "left",
 "fixed-center": true,
 "reload_style_on_change": true,
+"on-sigusr1":"toggle",
+"on-sigusr2":"reload",
 // "width": 40,
 
 
