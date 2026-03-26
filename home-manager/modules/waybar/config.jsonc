@@ -1,6 +1,6 @@
 {
 "layer": "top",
-"position": "left",
+"position": "top",
 "fixed-center": true,
 "reload_style_on_change": true,
 "on-sigusr1":"toggle",
@@ -10,10 +10,8 @@
 
 "modules-left": [
     "clock",
-    "cpu",
-    "memory",
-    "disk",
-    "pulseaudio"
+    "hyprland/window",
+    "group/utils"
 ],
 
 "modules-center": [
@@ -21,10 +19,7 @@
 ],
 
 "modules-right": [
-    "backlight",
-    "bluetooth",
-    "network",
-    "temperature",
+    "group/stats",
     "battery",
     "custom/power"
 ],
@@ -34,26 +29,73 @@
     "on-click": "activate",
     "sort-by-number": true,
     "disable-scroll": true,
-    "all-outputs": true,
-    // "format-icons": {
-    //  "urgent": "[!]",
-    //  "focused": "[]",
-    //  "default": "[]"
-    // },
-    "persistent-workspaces": {
-	// "*": [ 1,2,3,4,5,6 ]
+    "all-outputs": true
+	//    "persistent-workspaces": {
+	// // "*": [ 1,2,3,4,5,6 ]
+	//    }
+},
+"hyprland/window": {
+    "format": "󰣆 {title}",
+    "max-length": 40,
+    "separate-outputs": false,
+    "rewrite": {
+      "(.*) — Mozilla Firefox": " Firefox",
+      "(.*) ": " Empty"
+      // "^.*❯$": "󰄛 Kitty",
     }
+},
+"group/utils": {
+    "orientation": "horizontal",
+    "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-memory",
+        "transition-left-to-right": false
+        // "click-to-reveal": true
+    },
+    "modules": [
+    "custom/utils-icon",
+    "pulseaudio",
+    "backlight",
+    "bluetooth",
+    "network"
+    ]
+},
+"custom/utils-icon":{
+    "format": "",
+    "tooltip":false
+},
+
+
+"group/stats": {
+    "orientation": "horizontal",
+    "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-memory",
+        "transition-left-to-right": true,
+        "click-to-reveal": true
+    },
+    "modules": [
+    "custom/stats-icon",
+    "cpu",
+    "memory",
+    "disk",
+    "temperature"
+    ]
+},
+"custom/stats-icon":{
+    "format": "󰄨",
+    "tooltip":false
 },
 
 "clock": {
-    "format": "{:%H\n%M}", 
+    "format": "{:%H %M}", 
     "tooltip-format": "{:%A, %d %B %Y}",
     "locale": "pl_PL.UTF-8",
     "timezones": [ "Europe/Warsaw" ]
 },
 
 "cpu": {
-    "format": "\n{usage}",
+    "format": " {usage}%",
     "interval": 2,
     "tooltip-format": "CPU: {usage}%",
     "states": {
@@ -62,7 +104,7 @@
 },
 
 "memory": {
-    "format": "\n{percentage}",
+    "format": " {percentage}%",
     "interval": 2,
     "tooltip-format": "Used: {used}GiB",
     "states": {
@@ -71,7 +113,7 @@
 },
 
 "disk": {
-    "format": "\n{percentage_used}",
+    "format": "󰋊 {percentage_used}%",
     "interval": 60,
     "tooltip-format": "Used {used}({percentage_used}%)/{total}({percentage_free}%)",
     "path": "/"
@@ -79,8 +121,8 @@
 
 
 "pulseaudio": {
-    "format": "{icon}\n{volume}",
-    "format-muted": "󰖁\nMute",
+    "format": "{icon} {volume}",
+    "format-muted": "󰖁 Mute",
     "format-icons": ["", "", ""],
     "tooltip-format": "Volume: {volume}%",
     "smooth-scrolling-threshold": 1,
@@ -88,7 +130,7 @@
 },
 
 "backlight": {
-    "format": "{icon}\n{percent}",
+    "format": "{icon} {percent}",
     "format-icons": ["󰃜", "󰃞", "󰃟", "󰃝", "󰃠"],
     "tooltip-format": "Screen brightness: {percent}%"
 },
@@ -112,16 +154,16 @@
 
 "temperature": {
     "thermal-zone": 0,
-    "format": "\n{temperatureC}",
+    "format": " {temperatureC}°C",
     "critical-threshold": 80,
-    "format-critical": "󰈸\n{temperatureC}",
+    "format-critical": "󰈸 {temperatureC}",
     "tooltip-format": "Temp: {temperatureC}°C"
 },
 
 "battery": {
-    "format": "{icon}\n{capacity}",
-    "format-charging": "\n{capacity}",
-    "format-plugged": "\n{capacity}",
+    "format": "{icon} {capacity}",
+    "format-charging": " {capacity}",
+    "format-plugged": " {capacity}",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5,
     "tooltip-format": "{timeTo}\nHealth: {health}%",

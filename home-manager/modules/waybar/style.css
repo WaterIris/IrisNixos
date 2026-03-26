@@ -19,7 +19,7 @@
 * {
   all:unset;  
   font-family: "Mononoki Nerd Font Propo";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   border: none;
   border-radius: 0px;
@@ -48,13 +48,13 @@ tooltip label {
 }
 /* Workspaces */
 #workspaces button {
-    padding: 2px 4px;
+    border-radius: 10px;
     margin: 6px 6px;
+    padding: 4px 12px;
     color: @magenta;
     background: @background;
     border-color: @background;
     border-style: solid;
-    border-radius: 10px;
     /* border-radius: 8px; */
     transition: all 0.2s ease;
 }
@@ -70,6 +70,7 @@ tooltip label {
 }
 /* Clock */
 
+#window,
 #clock,
 #memory, 
 #cpu, 
@@ -80,22 +81,28 @@ tooltip label {
 #temperature,
 #battery,
 #bluetooth,
+#custom-utils-icon,
+#custom-stats-icon,
 #backlight{
     border-radius: 10px;
     margin: 6px 6px;
-    padding: 4px 4px;
+    padding: 4px 12px;
     color: @subtle;
     background: @background;
 }
 
 #clock{
-    margin-top: 12px;
+    border-radius: 10px;
+    margin: 6px 6px;
+    padding: 4px 12px;
     color: @red;
     background: @red-surface;
 }
 
 #custom-power{
-    margin-bottom: 12px;
+    border-radius: 10px;
+    margin: 6px 6px;
+    padding: 4px 12px;
     color: @pine;
     background: @pine-surface;
 }
