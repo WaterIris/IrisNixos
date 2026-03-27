@@ -1,6 +1,6 @@
 {
 "layer": "top",
-"position": "top",
+"position": "left",
 "fixed-center": true,
 "reload_style_on_change": true,
 "on-sigusr1":"toggle",
@@ -10,7 +10,6 @@
 
 "modules-left": [
     "clock",
-    "hyprland/window",
     "group/utils"
 ],
 
@@ -40,12 +39,13 @@
     "separate-outputs": false,
     "rewrite": {
       "(.*) — Mozilla Firefox": " Firefox",
-      "(.*) ": " Empty"
-      // "^.*❯$": "󰄛 Kitty",
+      "(.*) ": " Empty",
+	  "(.*)zsh(.*)": "󰄛 Kitty",
+	  "(.*)kitty(.*)": "󰄛 Kitty"
     }
 },
 "group/utils": {
-    "orientation": "horizontal",
+    "orientation": "vertical",
     "drawer": {
         "transition-duration": 500,
         "children-class": "not-memory",
@@ -67,7 +67,7 @@
 
 
 "group/stats": {
-    "orientation": "horizontal",
+    "orientation": "vertical",
     "drawer": {
         "transition-duration": 500,
         "children-class": "not-memory",
@@ -88,14 +88,14 @@
 },
 
 "clock": {
-    "format": "{:%H %M}", 
+    "format": "{:%H\n%M}", 
     "tooltip-format": "{:%A, %d %B %Y}",
     "locale": "pl_PL.UTF-8",
     "timezones": [ "Europe/Warsaw" ]
 },
 
 "cpu": {
-    "format": " {usage}%",
+    "format": "\n{usage}%",
     "interval": 2,
     "tooltip-format": "CPU: {usage}%",
     "states": {
@@ -104,7 +104,7 @@
 },
 
 "memory": {
-    "format": " {percentage}%",
+    "format": "\n{percentage}%",
     "interval": 2,
     "tooltip-format": "Used: {used}GiB",
     "states": {
@@ -113,7 +113,7 @@
 },
 
 "disk": {
-    "format": "󰋊 {percentage_used}%",
+    "format": "󰋊\n{percentage_used}%",
     "interval": 60,
     "tooltip-format": "Used {used}({percentage_used}%)/{total}({percentage_free}%)",
     "path": "/"
@@ -121,8 +121,8 @@
 
 
 "pulseaudio": {
-    "format": "{icon} {volume}",
-    "format-muted": "󰖁 Mute",
+    "format": "{icon}\n{volume}",
+    "format-muted": "󰖁\nMute",
     "format-icons": ["", "", ""],
     "tooltip-format": "Volume: {volume}%",
     "smooth-scrolling-threshold": 1,
@@ -130,7 +130,7 @@
 },
 
 "backlight": {
-    "format": "{icon} {percent}",
+    "format": "{icon}\n{percent}",
     "format-icons": ["󰃜", "󰃞", "󰃟", "󰃝", "󰃠"],
     "tooltip-format": "Screen brightness: {percent}%"
 },
@@ -154,16 +154,16 @@
 
 "temperature": {
     "thermal-zone": 0,
-    "format": " {temperatureC}°C",
+    "format": "\n{temperatureC}°",
     "critical-threshold": 80,
-    "format-critical": "󰈸 {temperatureC}",
-    "tooltip-format": "Temp: {temperatureC}°C"
+    "format-critical": "󰈸\n{temperatureC}",
+    "tooltip-format": "Temp:\n{temperatureC}°C"
 },
 
 "battery": {
-    "format": "{icon} {capacity}",
-    "format-charging": " {capacity}",
-    "format-plugged": " {capacity}",
+    "format": "{icon}\n{capacity}",
+    "format-charging": "\n{capacity}",
+    "format-plugged": "\n{capacity}",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5,
     "tooltip-format": "{timeTo}\nHealth: {health}%",

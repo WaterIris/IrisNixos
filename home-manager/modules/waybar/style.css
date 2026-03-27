@@ -86,7 +86,7 @@ tooltip label {
 #backlight{
     border-radius: 10px;
     margin: 6px 6px;
-    padding: 4px 12px;
+    padding: 4px 6px;
     color: @subtle;
     background: @background;
 }
@@ -94,7 +94,7 @@ tooltip label {
 #clock{
     border-radius: 10px;
     margin: 6px 6px;
-    padding: 4px 12px;
+    padding: 4px 6px;
     color: @red;
     background: @red-surface;
 }
@@ -102,7 +102,7 @@ tooltip label {
 #custom-power{
     border-radius: 10px;
     margin: 6px 6px;
-    padding: 4px 12px;
+    padding: 4px 6px;
     color: @pine;
     background: @pine-surface;
 }
