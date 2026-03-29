@@ -1,6 +1,6 @@
 {
 "layer": "top",
-"position": "left",
+"position": "top",
 "fixed-center": true,
 "reload_style_on_change": true,
 "on-sigusr1":"toggle",
@@ -9,12 +9,13 @@
 
 
 "modules-left": [
-    "clock",
+    "hyprland/workspaces",
+    "hyprland/window",
     "group/utils"
 ],
 
 "modules-center": [
-    "hyprland/workspaces"
+    "clock"
 ],
 
 "modules-right": [
@@ -28,10 +29,10 @@
     "on-click": "activate",
     "sort-by-number": true,
     "disable-scroll": true,
-    "all-outputs": true
-	//    "persistent-workspaces": {
-	// // "*": [ 1,2,3,4,5,6 ]
-	//    }
+    "all-outputs": true,
+	   "persistent-workspaces": {
+	"*": [ 1,2,3,4,5 ]
+	   }
 },
 "hyprland/window": {
     "format": "󰣆 {title}",
@@ -45,7 +46,7 @@
     }
 },
 "group/utils": {
-    "orientation": "vertical",
+    "orientation": "horizontal",
     "drawer": {
         "transition-duration": 500,
         "children-class": "not-memory",
@@ -67,7 +68,7 @@
 
 
 "group/stats": {
-    "orientation": "vertical",
+    "orientation": "horizontal",
     "drawer": {
         "transition-duration": 500,
         "children-class": "not-memory",
@@ -88,14 +89,14 @@
 },
 
 "clock": {
-    "format": "{:%H\n%M}", 
+    "format": "󱑒 {:%H:%M}", 
     "tooltip-format": "{:%A, %d %B %Y}",
     "locale": "pl_PL.UTF-8",
     "timezones": [ "Europe/Warsaw" ]
 },
 
 "cpu": {
-    "format": "\n{usage}%",
+    "format": " {usage}%",
     "interval": 2,
     "tooltip-format": "CPU: {usage}%",
     "states": {
@@ -104,7 +105,7 @@
 },
 
 "memory": {
-    "format": "\n{percentage}%",
+    "format": " {percentage}%",
     "interval": 2,
     "tooltip-format": "Used: {used}GiB",
     "states": {
@@ -113,7 +114,7 @@
 },
 
 "disk": {
-    "format": "󰋊\n{percentage_used}%",
+    "format": "󰋊 {percentage_used}%",
     "interval": 60,
     "tooltip-format": "Used {used}({percentage_used}%)/{total}({percentage_free}%)",
     "path": "/"
@@ -121,8 +122,8 @@
 
 
 "pulseaudio": {
-    "format": "{icon}\n{volume}",
-    "format-muted": "󰖁\nMute",
+    "format": "{icon} {volume}",
+    "format-muted": "󰖁 Mute",
     "format-icons": ["", "", ""],
     "tooltip-format": "Volume: {volume}%",
     "smooth-scrolling-threshold": 1,
@@ -130,7 +131,7 @@
 },
 
 "backlight": {
-    "format": "{icon}\n{percent}",
+    "format": "{icon} {percent}",
     "format-icons": ["󰃜", "󰃞", "󰃟", "󰃝", "󰃠"],
     "tooltip-format": "Screen brightness: {percent}%"
 },
@@ -154,16 +155,16 @@
 
 "temperature": {
     "thermal-zone": 0,
-    "format": "\n{temperatureC}°",
+    "format": " {temperatureC}°C",
     "critical-threshold": 80,
-    "format-critical": "󰈸\n{temperatureC}",
-    "tooltip-format": "Temp:\n{temperatureC}°C"
+    "format-critical": "󰈸 {temperatureC}°C",
+    "tooltip-format": "Temp: {temperatureC}°C"
 },
 
 "battery": {
-    "format": "{icon}\n{capacity}",
-    "format-charging": "\n{capacity}",
-    "format-plugged": "\n{capacity}",
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5,
     "tooltip-format": "{timeTo}\nHealth: {health}%",
