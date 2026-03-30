@@ -64,5 +64,6 @@
     luarocks
     nixfmt
     nil
+
   ];
 }
