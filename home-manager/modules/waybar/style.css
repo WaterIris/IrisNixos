@@ -63,7 +63,8 @@ tooltip label {
     color: @red;
 }
 #workspaces button.empty {
-    color: @subtle;
+    /* color: @subtle; */
+    color: transparent;
 }
 #workspaces button.empty.active {
     color: @red;
