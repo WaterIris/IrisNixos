@@ -38,6 +38,7 @@
         diverged = "[⇕$ahead_count⇣$behind_count ](mauve)";
       };
       python = {
+        format = "[$virtualenv](flamingo) ";
         symbol = " ";
       };
       nix_shell = {
@@ -52,9 +53,9 @@
         "$directory"
         "$git_branch"
         "$git_status"
-        "$python"
         "$cmd_duration"
         "$line_break"
+        "$python"
         "$character"
       ];
 
