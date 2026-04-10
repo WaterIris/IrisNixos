@@ -9,13 +9,13 @@
 
 
 "modules-left": [
-    "clock",
+    "hyprland/workspaces",
     "hyprland/window",
     "group/utils"
 ],
 
 "modules-center": [
-    "hyprland/workspaces",
+    "clock",
 ],
 
 "modules-right": [

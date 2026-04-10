@@ -43,7 +43,6 @@
     mpv
     calibre
     baobab
-    vscode-fhs
     foliate
     # Wayland specific
     wl-clipboard
