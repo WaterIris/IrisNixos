@@ -42,7 +42,7 @@
     qbittorrent
     mpv
     calibre
-    baobab
+    # baobab
     foliate
     # Wayland specific
     wl-clipboard
@@ -51,6 +51,7 @@
     hypridle
     hyprshot
     hyprlock
+    swayfx
     waybar
     #Other
     dunst

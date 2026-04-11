@@ -5,12 +5,11 @@
 "reload_style_on_change": true,
 "on-sigusr1":"toggle",
 "on-sigusr2":"reload",
-// "width": 40,
 
 
 "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/window",
+    "sway/workspaces",
+    "sway/window",
     "group/utils"
 ],
 
@@ -24,17 +23,22 @@
     "custom/power"
 ],
 
-"hyprland/workspaces": {
+"sway/workspaces": {
     "format": "{name}", 
     "on-click": "activate",
     "sort-by-number": true,
     "disable-scroll": true,
     "all-outputs": true,
-	"persistent-workspaces": {
-	    "*": [ 1,2,3,4,5 ]
-	},
+	// "persistent-workspaces": {
+	//     "*": [ 1,2,3 ]
+	// },
+    "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+    },
 },
-"hyprland/window": {
+"sway/window": {
     "format": "󰣆 {title}",
     "max-length": 40,
     "separate-outputs": false,
