@@ -17,7 +17,7 @@
 @define-color magenta #bb9af7;
 
 * {
-  all:unset;  
+  all:unset;
   font-family: "Mononoki Nerd Font Propo";
   font-size: 18px;
   font-weight: bold;
@@ -51,7 +51,7 @@ tooltip label {
     border-radius: 10px;
     margin: 6px 3px;
     padding: 4px 12px;
-    color: @magenta;
+    color: @subtle;
     background: @background;
     border-color: @background;
     border-style: solid;
@@ -60,11 +60,11 @@ tooltip label {
 }
 
 #workspaces button.active {
-    color: @red;
+    color: @blue;
 }
 
 #workspaces button.focused {
-    color: @red;
+    color: @blue;
 }
 
 #workspaces button.empty:not(.focused):not(.active) {

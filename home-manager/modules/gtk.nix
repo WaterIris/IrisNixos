@@ -1,11 +1,11 @@
 { pkgs, ... }:
+
 {
   home.pointerCursor = {
     gtk.enable = true;
     package = pkgs.bibata-cursors;
-    # name = "Bibata-Modern-Classic";
     name = "Bibata-Modern-Ice";
-    size = 16;
+    size = 20;
   };
 
   gtk = {
@@ -13,8 +13,8 @@
     colorScheme = "dark";
 
     theme = {
-      package = pkgs.flat-remix-gtk;
-      name = "Flat-Remix-GTK-Grey-Dark";
+      package = pkgs.tokyonight-gtk-theme;
+      name = "Tokyonight-Dark";
     };
 
     iconTheme = {

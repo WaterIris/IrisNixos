@@ -8,13 +8,12 @@
 
 
 "modules-left": [
-    "sway/workspaces",
-    "sway/window",
+    "clock",
     "group/utils"
 ],
 
 "modules-center": [
-    "clock",
+    "sway/workspaces"
 ],
 
 "modules-right": [
@@ -40,6 +39,7 @@
         "5": [],
     },
 },
+
 "sway/window": {
     "format": "󰣆 {title}",
     "max-length": 40,
@@ -56,8 +56,8 @@
     "drawer": {
         "transition-duration": 500,
         "children-class": "not-memory",
-        "transition-left-to-right": false
-        // "click-to-reveal": true
+        "transition-left-to-right": false,
+        "click-to-reveal": true
     },
     "modules": [
     "custom/utils-icon",
