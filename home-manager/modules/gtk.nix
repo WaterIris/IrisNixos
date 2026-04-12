@@ -1,30 +1,40 @@
 { pkgs, ... }:
 
 {
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Ice";
-    size = 20;
-  };
-
+  # home.pointerCursor = {
+  #   gtk.enable = true;
+  #   package = pkgs.bibata-cursors;
+  #   name = "Bibata-Modern-Ice";
+  #   size = 20;
+  # };
   gtk = {
     enable = true;
-    colorScheme = "dark";
 
+    # Theme selection (GTK 2 & 3)
     theme = {
-      package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Dark";
+      package = pkgs.gnome-themes-extra;
+      name = "Adwaita-dark";
     };
 
+    # Icon Theme
     iconTheme = {
       package = pkgs.adwaita-icon-theme;
       name = "Adwaita";
     };
 
-    font = {
-      name = "Mononoki Nerd Font Bold";
-      size = 13;
+    # Cursor Theme
+    cursorTheme = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Ice";
+      size = 24;
+    };
+
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
+
+    gtk4.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
     };
   };
 }
