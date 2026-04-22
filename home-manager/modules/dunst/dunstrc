@@ -8,18 +8,20 @@
 
     ### Geometry ###
     # dynamic width from 0 to 700
-    width = (0, 301)
+    width = (0, 300)
+
     # constant width of 400
     # width = 400
 
     # The maximum height of a single notification, excluding the frame.
     height = 120
 
+    gap_size = 8
     # Position the notification in the top right corner
     origin = top-right
 
     # Offset from the origin
-    offset = 30x70
+    offset = 30x80
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -165,9 +167,9 @@
 
     ### Icons ###
     # icon_theme = Papirus-Dark
-    show_icons = false
+    show_icons = True
     # Align icons left/right/off
-    icon_position = off
+    icon_position = left
 
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
