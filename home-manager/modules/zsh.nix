@@ -7,7 +7,7 @@
       add_newline = false;
       palette = "tokyonight_night";
       directory = {
-        truncation_length = 0;
+        truncation_length = 3;
         truncate_to_repo = false;
         style = "blue";
       };
@@ -50,7 +50,6 @@
 
       format = lib.concatStrings [
         "$python"
-        "$hostname"
         "$directory"
         "$git_branch"
         "$git_status"

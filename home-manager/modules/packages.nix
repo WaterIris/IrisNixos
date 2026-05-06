@@ -64,6 +64,7 @@
     luarocks
     nixfmt
     nil
+    zed-editor
 
   ];
 }
