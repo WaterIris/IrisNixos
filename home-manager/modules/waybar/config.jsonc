@@ -5,17 +5,15 @@
 "reload_style_on_change": true,
 "on-sigusr1":"toggle",
 "on-sigusr2":"reload",
-// "width": 40,
 
 
 "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/window",
+    "clock",
     "group/utils"
 ],
 
 "modules-center": [
-    "clock",
+    "hyprland/workspaces"
 ],
 
 "modules-right": [
@@ -30,10 +28,18 @@
     "sort-by-number": true,
     "disable-scroll": true,
     "all-outputs": true,
-	"persistent-workspaces": {
-	    "*": [ 1,2,3,4,5 ]
-	},
+	// "persistent-workspaces": {
+	//     "*": [ 1,2,3 ]
+	// },
+    "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+    },
 },
+
 "hyprland/window": {
     "format": "󰣆 {title}",
     "max-length": 40,
@@ -50,8 +56,8 @@
     "drawer": {
         "transition-duration": 500,
         "children-class": "not-memory",
-        "transition-left-to-right": false
-        // "click-to-reveal": true
+        "transition-left-to-right": false,
+        "click-to-reveal": true
     },
     "modules": [
     "custom/utils-icon",

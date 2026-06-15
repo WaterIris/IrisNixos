@@ -3,6 +3,12 @@
   inputs,
   ...
 }:
+let
+  pkgs-unstable = import inputs.nixpkgs-unstable {
+    system = "x86_64-linux";
+    config.allowUnfree = true;
+  };
+in
 {
   home.packages = with pkgs; [
     # inputs.nixvim.packages.${system}.default # enable nixvim flake
@@ -10,6 +16,7 @@
     ripgrep # better grep
     fd # better find
     brightnessctl
+    discord
     zip
     unzip
     fastfetch
@@ -42,7 +49,7 @@
     qbittorrent
     mpv
     calibre
-    baobab
+    # baobab
     foliate
     # Wayland specific
     wl-clipboard
@@ -51,6 +58,7 @@
     hypridle
     hyprshot
     hyprlock
+    swayfx
     waybar
     #Other
     dunst
@@ -63,6 +71,7 @@
     luarocks
     nixfmt
     nil
+    pkgs-unstable.zed-editor
 
   ];
 }

@@ -7,7 +7,7 @@
       add_newline = false;
       palette = "tokyonight_night";
       directory = {
-        truncation_length = 0;
+        truncation_length = 3;
         truncate_to_repo = false;
         style = "blue";
       };
@@ -38,7 +38,7 @@
         diverged = "[⇕$ahead_count⇣$behind_count ](mauve)";
       };
       python = {
-        format = "[$virtualenv](flamingo) ";
+        format = "[\\($virtualenv\\)](flamingo) ";
         symbol = " ";
       };
       nix_shell = {
@@ -49,13 +49,12 @@
       };
 
       format = lib.concatStrings [
-        "$hostname"
+        "$python"
         "$directory"
         "$git_branch"
         "$git_status"
         "$cmd_duration"
         "$line_break"
-        "$python"
         "$character"
       ];
 
