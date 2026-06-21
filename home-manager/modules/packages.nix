@@ -47,6 +47,7 @@ in
     qbittorrent
     mpv
     calibre
+    vscode-fhs
     # Wayland specific
     wl-clipboard
     hyprpicker
