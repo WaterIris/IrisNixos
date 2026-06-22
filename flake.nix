@@ -1,4 +1,3 @@
-
 {
   description = "My NixOS configuration with standalone Home Manager";
 
@@ -6,11 +5,17 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
-      inputs.nixpkgs.follows = "nixpkgs"; # keeps home-manager's nixpkgs in sync with yours
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
 
@@ -31,7 +36,7 @@
           inherit system;
           specialArgs = { inherit inputs; };
           modules = [
-            ./system/configuration.nix
+            ./system/laptop/configuration.nix
           ];
         };
       };
@@ -44,7 +49,7 @@
           pkgs = pkgsWithUnfree;
           extraSpecialArgs = { inherit inputs; };
           modules = [
-            ./home/home.nix
+            ./home/laptop
           ];
         };
       };

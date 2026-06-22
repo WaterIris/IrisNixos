@@ -1,17 +1,9 @@
 {
   pkgs,
-  inputs,
   ...
 }:
-let
-  pkgs-unstable = import inputs.nixpkgs-unstable {
-    system = "x86_64-linux";
-    config.allowUnfree = true;
-  };
-in
 {
   home.packages = with pkgs; [
-    # inputs.nixvim.packages.${system}.default # enable nixvim flake
     # Cli apps
     ripgrep # better grep
     fd # better find
