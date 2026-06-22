@@ -48,6 +48,7 @@ in
     mpv
     calibre
     vscode-fhs
+    gnome-disk-utility
     # Wayland specific
     wl-clipboard
     hyprpicker
